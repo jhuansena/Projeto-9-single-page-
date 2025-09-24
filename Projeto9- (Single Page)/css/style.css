@@ -1,0 +1,179 @@
+/* ================================================= */
+
+/* 1. ESTILOS GLOBAIS E RESET                        */
+
+/* ================================================= */
+
+:root {
+
+    --cor-primaria: #007bff;
+
+    --cor-escura: #343a40;
+
+    --cor-clara: #f8f9fa;
+
+    --cor-branca: #ffffff;
+
+    --cor-texto: #333;
+
+}
+
+ 
+
+/* A MÁGICA DO SCROLL SUAVE */
+
+html {
+    scroll-behavior: smooth;
+}
+
+ 
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--cor-escura);
+    margin-bottom: 40px;
+
+}
+
+section {
+    padding: 60px 0; /* Espaçamento vertical padrão entre as seções */
+}
+
+ 
+
+/* ================================================= */
+
+/* 2. HEADER E NAVEGAÇÃO (DO PROJETO 4)              */
+
+/* ================================================= */
+
+.main-header {
+    background-color: var(--cor-branca);
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky; /* Cabeçalho que "gruda" no topo */
+    top: 0;
+    z-index: 1000;
+}
+.main-header .container { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 1.8rem; font-weight: bold; color: var(--cor-escura); text-decoration: none; }
+.main-nav ul { margin: 0; padding: 0; list-style: none; display: flex; gap: 25px; }
+.main-nav a { text-decoration: none; color: #555; font-weight: 500; }
+.main-nav a:hover { color: var(--cor-primaria); }
+
+ 
+
+/* ================================================= */
+
+/* 3. SEÇÃO HERO (DO PROJETO 5)                      */
+
+/* ================================================= */
+
+.hero-section {
+
+    background-color: var(--cor-escura);
+    color: var(--cor-branca);
+    min-height: 60vh; /* Altura um pouco menor para se adequar a uma página com mais conteúdo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+
+}
+
+.hero-title { font-size: 3rem; margin-bottom: 20px; }
+.hero-subtitle { font-size: 1.25rem; margin-bottom: 40px; }
+.hero-button { background-color: var(--cor-primaria); color: var(--cor-branca); padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+
+ 
+
+/* ================================================= */
+
+/* 4. SEÇÃO GALERIA (DO PROJETO 6)                   */
+
+/* ================================================= */
+
+.gallery-section { background-color: var(--cor-clara); }
+
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+
+.gallery-item { border-radius: 8px; overflow: hidden; }
+
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+ 
+
+/* ================================================= */
+
+/* 5. SEÇÃO DEPOIMENTOS (DO PROJETO 8)               */
+
+/* ================================================= */
+
+.testimonials-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; }
+
+.testimonial-card { background-color: var(--cor-branca); padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.07); text-align: center; flex: 1 1 300px; max-width: 350px; }
+
+.testimonial-avatar { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; }
+
+.testimonial-card blockquote { font-style: italic; color: #6c757d; margin: 0; }
+
+.testimonial-card cite { display: block; margin-top: 20px; font-weight: bold; font-style: normal; }
+
+ 
+
+/* ================================================= */
+
+/* 6. SEÇÃO CONTATO (DO PROJETO 7)                   */
+
+/* ================================================= */
+
+.contact-section { background-color: var(--cor-clara); }
+
+.form-container { background-color: var(--cor-branca); padding: 40px; border-radius: 8px; max-width: 500px; margin: 0 auto; }
+
+.form-group { margin-bottom: 20px; text-align: left; }
+
+.form-group label { display: block; margin-bottom: 8px; }
+
+.form-group input { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; }
+
+.submit-button { width: 100%; padding: 15px; background-color: var(--cor-primaria); color: white; border: none; border-radius: 4px; font-size: 1.1rem; cursor: pointer; }
+
+ 
+
+/* ================================================= */
+
+/* 7. RODAPÉ                                         */
+
+/* ================================================= */
+
+.main-footer {
+
+    text-align: center;
+
+    padding: 20px;
+
+    background-color: var(--cor-escura);
+
+    color: var(--cor-clara);
+
+}
+
+ 
+
